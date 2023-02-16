@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/images/sinarmas.png">
-    <link rel="stylesheet" href="/style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/sinarmas.png">
     <title>Sinarmas Futures - Sinarmas Futures</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    dropShadow: {
+                        '3xl': '0 35px 35px rgba(0, 0, 0, 0.5)',
+                        '4xl': [
+                            '0 35px 35px rgba(0, 0, 0, 0.25)',
+                            '0 45px 65px rgba(0, 0, 0, 0.15)'
+                        ]
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <main>
-        <div class="bg-main">
-            <div class="continer bg-top hidden md:block lg:block">
-                <div class="container py-2 flex justify-between">
-                    <div class="flex">
-                        <div class="text-sm flex">
+        <div class="header">
+            <div>
+                <div class="bg-black/50 flex">
+                    <div class="container p-2 justify-between flex">
+                        <div class="text-sm flex max-w-full w-1/2">
                             <i class="fa-solid fa-envelope text-white text-xl"></i>
-                            <div class="flex flex-column justify-center ml-2 text-white">
+                            <div class="justify-center ml-2 text-white">
                                 cs@sinarmasfutures.co.id
                             </div>
                             <div class="text-sm flex ml-4">
                                 <i class="fa-solid fa-suitcase text-white text-xl"></i>
-                                <div class="flex flex-column justify-center ml-2 text-white">
-                                  Sinar Mas Land, Menara III, Lantai 5, Jl. MH Thamrin No. 51,
-                                  Jakarta
+                                <div class="justify-center ml-2 text-white">
+                                    Sinar Mas Land, Menara III, Lantai 5, Jl. MH Thamrin No. 51,
+                                    Jakarta
                                 </div>
                             </div>
                         </div>
-                        <div class="flex">
-                            <a href="https://www.facebook.com/sinarmas.futures.5" target="_blank" rel="noopener noreferrer">
-                                <i class="fa-brands fa-facebook text-white text-xl icon-top"></i>
+                        <div class="flex-end ml-4">
+                            <!-- <a href="https://www.facebook.com/sinarmas.futures.5" target="_blank" rel="noopener noreferrer"> -->
+                            <a href="#">
+                                <i class="fa-brands fa-facebook text-white text-2xl icon-top"></i>
                             </a>
-                            
-                            <a href="https://twitter.com/sinarmasfutures" target="_blank">
-                                <i class="fa-brands fa-twitter text-white text-xl icon-top"></i>
+
+                            <!-- <a href="https://twitter.com/sinarmasfutures" target="_blank"> -->
+                            <a href="#">
+                                <i class="fa-brands fa-twitter text-white text-2xl icon-top"></i>
                             </a>
-                            <a href="https://www.instagram.com/sinarmasfutures/" target="_blank">
-                                <i class="fa-brands fa-instagram text-white text-xl icon-top"></i>
+                            <!-- <a href="https://www.instagram.com/sinarmasfutures/" target="_blank"> -->
+                            <a href="#">
+                                <i class="fa-brands fa-instagram text-white text-2xl icon-top"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="flex"></div>
                 </div>
             </div>
             <div class="container">
-                <img class="h-16 pt-2" src="/assets/images/simas-logo-small.png" alt="sinarmas">
-                <div class="drop-shadow-lg text-standard mt-32 lg:mt-20 font-bold text-black text-xl">
+                <img class="h-16 p-2" src="assets/images/simas-logo-small.png" alt="sinarmas">
+                <div class="drop-shadow-3xl text-standard mt-32 lg:mt-20 font-bold text-white text-3xl">
                     KITA HADIR
                 </div>
-                <div class="drop-shadow-2xl shadow-black f-56 w-2/3 font-bold text-black text-6xl">
+                <div class="font-bold text-white text-8xl drop-shadow-4xl">
                     Memberikan Investasi untuk Masa Depan Anda
                 </div>
                 <div class="lg:grid grid-cols-4 gap-2 m-24">
-                    <div class="bg-red-500 opacity-80 p-5 text-white">
+                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
                         <i class="fa-solid fa-chart-simple text-6xl pb-6"></i><br>
                         Langsung di dalam bursa
                     </div>
-                    <div class="bg-red-500 opacity-80 p-5 text-white">
+                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
                         <i class="fa-solid fa-globe text-6xl pb-6"></i><br>
                         Terintregasi Dengan Pasar Global
                     </div>
-                    <div class="bg-red-500 opacity-80 p-5 text-white">
+                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
                         <i class="fa-solid fa-shield-halved text-6xl pb-6"></i><br>
                         Tingkat Keamanan Terbaik
                     </div>
-                    <div class="bg-red-500 opacity-80 p-5 text-white">
+                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
                         <i class="fa-solid fa-chart-line text-6xl pb-6"></i><br>
                         Likuiditas Pasar yang Sempurna
                     </div>
@@ -89,10 +105,13 @@
                         Sinarmas Futures
                     </div>
                     <div>
-                        PT Sinarmas Futures mendapatkan ijin operasional dari regulator perdagangan berjangka komoditi Indonesia, Badan Pengawas Perdagangan Berjangka Komoditi – BAPPEBTI – Kementerian Perdagangan Republik Indonesia sejak tahun 2006.
+                        PT Sinarmas Futures mendapatkan ijin operasional dari regulator perdagangan berjangka komoditi
+                        Indonesia, Badan Pengawas Perdagangan Berjangka Komoditi – BAPPEBTI – Kementerian Perdagangan
+                        Republik Indonesia sejak tahun 2006.
                     </div>
                     <div>
-                        Dengan pengalaman lebih dari 16 tahun, PT Sinarmas Futures akan menjadi mitra terbaik dan terpercaya untuk Anda bertransaksi di perdagangan berjangka komoditi Indonesia.
+                        Dengan pengalaman lebih dari 16 tahun, PT Sinarmas Futures akan menjadi mitra terbaik dan
+                        terpercaya untuk Anda bertransaksi di perdagangan berjangka komoditi Indonesia.
                     </div>
                 </div>
             </div>
@@ -106,7 +125,8 @@
                 Kenapa Memilih Kami?
             </div>
             <div>
-                Kami memberikan layanan yang lebih baik, sesuai kebutuhan Anda dan Anda dapat mengelola investasi Anda dari mana saja baik dari rumah atau tempat kerja, kapan pun dan di mana pun.
+                Kami memberikan layanan yang lebih baik, sesuai kebutuhan Anda dan Anda dapat mengelola investasi Anda
+                dari mana saja baik dari rumah atau tempat kerja, kapan pun dan di mana pun.
             </div>
             <div>
                 <div>
@@ -116,7 +136,8 @@
                             Keamanan Dana Nasabah
                         </div>
                         <div>
-                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia Clearing House)
+                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia
+                            Clearing House)
                         </div>
                     </div>
                 </div>
@@ -127,7 +148,8 @@
                             Keamanan Dana Nasabah
                         </div>
                         <div>
-                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia Clearing House)
+                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia
+                            Clearing House)
                         </div>
                     </div>
                 </div>
@@ -138,7 +160,8 @@
                             Keamanan Dana Nasabah
                         </div>
                         <div>
-                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia Clearing House)
+                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia
+                            Clearing House)
                         </div>
                     </div>
                 </div>
@@ -149,7 +172,8 @@
                             Keamanan Dana Nasabah
                         </div>
                         <div>
-                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia Clearing House)
+                            Prosedur keamanan dana nasabah sepenuhnya ditempatkan di lembaga clearing (Indonesia
+                            Clearing House)
                         </div>
                     </div>
                 </div>
@@ -202,7 +226,8 @@
                 TRADING DENGAN KEPERCAYAAN DIRI
             </div>
             <div>
-                Aplikasi MT5 menyediakan seperangkat alat yang dirancang untuk memfasilitasi transaksi Anda langsung ke bursa ICDX
+                Aplikasi MT5 menyediakan seperangkat alat yang dirancang untuk memfasilitasi transaksi Anda langsung ke
+                bursa ICDX
             </div>
         </div>
 
@@ -262,7 +287,8 @@
                 </div>
             </div>
             <div>
-                Mulailah perjalanan Anda menjadi investor sukses bersama kami. Apakah Anda siap untuk mulai mengelola aset anda bersama kami?
+                Mulailah perjalanan Anda menjadi investor sukses bersama kami. Apakah Anda siap untuk mulai mengelola
+                aset anda bersama kami?
             </div>
             <div>
                 <a href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5" target="_blank">
@@ -275,7 +301,7 @@
                 </a>
             </div>
         </div>
-        
+
         <div class="container">
             <div class="grid grid-cols-6 my-6">
                 <div>
@@ -346,10 +372,15 @@
                         Pemberitahuan Resiko
                     </div>
                     <div>
-                        Semua produk finansial yang ditransaksikan dalam sistem margin mempunyai resiko tinggi terhadap dana Anda. Produk finansial ini tidak diperuntukkan bagi semua investor dan Anda bisa saja kehilangan dana lebih dari deposit awal Anda. Pastikan bahwa Anda benar-benar mengerti resikonya dan mintalah nasihat independen jika diperlukan.
+                        Semua produk finansial yang ditransaksikan dalam sistem margin mempunyai resiko tinggi terhadap
+                        dana Anda. Produk finansial ini tidak diperuntukkan bagi semua investor dan Anda bisa saja
+                        kehilangan dana lebih dari deposit awal Anda. Pastikan bahwa Anda benar-benar mengerti resikonya
+                        dan mintalah nasihat independen jika diperlukan.
                     </div>
                     <div>
-                        Mengingat transaksi ini adalah High Risk and High Return, Calon nasabah diwajibkan melakukan Simulasi Transaksi (Demo Account) terlebih dahulu dan mempelajari Peraturan Transaksi (Trading Rules) sebelum melakukan transaksi.
+                        Mengingat transaksi ini adalah High Risk and High Return, Calon nasabah diwajibkan melakukan
+                        Simulasi Transaksi (Demo Account) terlebih dahulu dan mempelajari Peraturan Transaksi (Trading
+                        Rules) sebelum melakukan transaksi.
                     </div>
                 </div>
                 <div>
@@ -370,4 +401,5 @@
     </main>
     <script src="https://kit.fontawesome.com/9c487cdb57.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
