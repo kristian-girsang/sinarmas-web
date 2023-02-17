@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
 .header {
   background-image: url("assets/images/main-banner.png");
   background-repeat: no-repeat;
@@ -11,5 +15,4 @@
 .container {
   max-width: 1140px;
   margin: auto;
-  font-family: "Quicksand", sans-serif;
 }

@@ -16,8 +16,8 @@
                     dropShadow: {
                         '3xl': '0 35px 35px rgba(0, 0, 0, 0.5)',
                         '4xl': [
-                            '0 35px 35px rgba(0, 0, 0, 0.25)',
-                            '0 45px 65px rgba(0, 0, 0, 0.15)'
+                            '0 35px 35px rgba(0, 0, 0, 0.9)',
+                            '0 45px 65px rgba(0, 0, 0, 0.9)'
                         ]
                     }
                 }
@@ -30,22 +30,22 @@
     <main>
         <div class="header">
             <div>
-                <div class="bg-black/50 flex">
-                    <div class="container p-2 justify-between flex">
-                        <div class="text-sm flex max-w-full w-1/2">
-                            <i class="fa-solid fa-envelope text-white text-xl"></i>
-                            <div class="justify-center ml-2 text-white">
+                <div class="bg-black/50 lg:flex pt-1 pb-1 hidden">
+                    <div class="container px-1 justify-between flex">
+                        <div class="text-sm lg:flex flex-nowrap hidden">
+                            <i class="fa-solid fa-envelope text-white text-xl pt-1 pb-1"></i>
+                            <div class="justify-center lg:ml-2 pt-1 pb-1 text-white">
                                 cs@sinarmasfutures.co.id
                             </div>
-                            <div class="text-sm flex ml-4">
-                                <i class="fa-solid fa-suitcase text-white text-xl"></i>
-                                <div class="justify-center ml-2 text-white">
+                            <div class="text-sm lg:flex flex-nowrap lg:ml-4 hidden">
+                                <i class="fa-solid fa-suitcase text-white text-xl pt-1 pb-1"></i>
+                                <div class="justify-center lg:ml-2 pt-1 pb-1 text-white">
                                     Sinar Mas Land, Menara III, Lantai 5, Jl. MH Thamrin No. 51,
                                     Jakarta
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-end ml-4">
+                        <div class="hidden lg:grid grid-cols-3 gap-4 flex">
                             <!-- <a href="https://www.facebook.com/sinarmas.futures.5" target="_blank" rel="noopener noreferrer"> -->
                             <a href="#">
                                 <i class="fa-brands fa-facebook text-white text-2xl icon-top"></i>
@@ -65,30 +65,70 @@
             </div>
             <div class="container">
                 <img class="h-16 p-2" src="assets/images/simas-logo-small.png" alt="sinarmas">
-                <div class="drop-shadow-3xl text-standard mt-32 lg:mt-20 font-bold text-white text-3xl">
+                <div
+                    class="drop-shadow-4xl text-standard mt-32 lg:mt-20 font-bold text-white text-center text-2xl md:text-3xl lg:text-3xl">
                     KITA HADIR
                 </div>
-                <div class="font-bold text-white text-8xl drop-shadow-4xl">
+                <div
+                    class="font-bold text-white text-center text-4xl sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-4xl">
                     Memberikan Investasi untuk Masa Depan Anda
                 </div>
-                <div class="lg:grid grid-cols-4 gap-2 m-24">
-                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
+                <div class="lg:grid lg:grid-cols-4 grid grid-cols-2 gap-2 m-24 hidden">
+                    <div class="bg-red-500 opacity-80 lg:px-5 px-2 lg:py-8 py-5 text-white rounded-xl">
                         <i class="fa-solid fa-chart-simple text-6xl pb-6"></i><br>
                         Langsung di dalam bursa
                     </div>
-                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
+                    <div class="bg-red-500 opacity-80 lg:px-5 px-2 lg:py-8 py-5 text-white rounded-xl">
                         <i class="fa-solid fa-globe text-6xl pb-6"></i><br>
                         Terintregasi Dengan Pasar Global
                     </div>
-                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
+                    <div class="bg-red-500 opacity-80 lg:px-5 px-2 lg:py-8 py-5 text-white rounded-xl">
                         <i class="fa-solid fa-shield-halved text-6xl pb-6"></i><br>
                         Tingkat Keamanan Terbaik
                     </div>
-                    <div class="bg-red-500 opacity-80 px-5 py-10 text-white rounded-tl-3xl rounded-br-3xl">
+                    <div class="bg-red-500 opacity-80 lg:px-5 px-2 lg:py-8 py-5 text-white rounded-xl">
                         <i class="fa-solid fa-chart-line text-6xl pb-6"></i><br>
                         Likuiditas Pasar yang Sempurna
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="md:grid md:grid-cols-2 gap-2 my-5 mx-2 hidden lg:hidden sm:hidden">
+            <div class="bg-red-500 opacity-90 lg:px-5 px-2 lg:py-10 py-5 text-white rounded-xl">
+                <i class="fa-solid fa-chart-simple text-6xl pb-6"></i><br>
+                Langsung di dalam bursa
+            </div>
+            <div class="bg-red-500 opacity-90 lg:px-5 px-2 lg:py-10 py-5 text-white rounded-xl">
+                <i class="fa-solid fa-globe text-6xl pb-6"></i><br>
+                Terintregasi Dengan Pasar Global
+            </div>
+            <div class="bg-red-500 opacity-90 lg:px-5 px-2 lg:py-10 py-5 text-white rounded-xl">
+                <i class="fa-solid fa-shield-halved text-6xl pb-6"></i><br>
+                Tingkat Keamanan Terbaik
+            </div>
+            <div class="bg-red-500 opacity-90 lg:px-5 px-2 lg:py-10 py-5 text-white rounded-xl">
+                <i class="fa-solid fa-chart-line text-6xl pb-3"></i><br>
+                Likuiditas Pasar yang Sempurna
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-2 m-2 md:hidden lg:hidden ">
+            <div class="bg-red-500 opacity-90 p-5 py-auto text-white rounded-xl text-3xl font-bold">
+                <i class="fa-solid fa-chart-simple text-6xl mr-3"></i>
+                Langsung di dalam bursa
+            </div>
+            <div class="bg-red-500 opacity-90 p-5 py-auto text-white rounded-xl text-3xl font-bold">
+                <i class="fa-solid fa-globe text-6xl mr-3"></i>
+                Terintregasi Dengan Pasar Global
+            </div>
+            <div class="bg-red-500 opacity-90 p-5 py-auto text-white rounded-xl text-3xl font-bold">
+                <i class="fa-solid fa-shield-halved text-6xl mr-3"></i>
+                Tingkat Keamanan Terbaik
+            </div>
+            <div class="bg-red-500 opacity-90 p-5 py-auto text-white rounded-xl text-3xl font-bold">
+                <i class="fa-solid fa-chart-line text-6xl mr-3"></i>
+                Likuiditas Pasar yang Sempurna
             </div>
         </div>
 
@@ -106,7 +146,7 @@
                     </div>
                     <div>
                         PT Sinarmas Futures mendapatkan ijin operasional dari regulator perdagangan berjangka komoditi
-                        Indonesia, Badan Pengawas Perdagangan Berjangka Komoditi – BAPPEBTI – Kementerian Perdagangan
+                        Indonesia, Badan Pengawas Perdagangan Berjangka Komoditi–BAPPEBTI–Kementerian Perdagangan
                         Republik Indonesia sejak tahun 2006.
                     </div>
                     <div>
