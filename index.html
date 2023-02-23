@@ -46,17 +46,15 @@
                             </div>
                         </div>
                         <div class="hidden lg:grid grid-cols-3 gap-4 flex">
-                            <!-- <a href="https://www.facebook.com/sinarmas.futures.5" target="_blank" rel="noopener noreferrer"> -->
-                            <a href="#">
+                            <a href="https://www.facebook.com/sinarmas.futures.5" target="_blank"
+                                rel="noopener noreferrer">
                                 <i class="fa-brands fa-facebook text-white text-2xl icon-top"></i>
                             </a>
 
-                            <!-- <a href="https://twitter.com/sinarmasfutures" target="_blank"> -->
-                            <a href="#">
+                            <a href="https://twitter.com/sinarmasfutures" target="_blank">
                                 <i class="fa-brands fa-twitter text-white text-2xl icon-top"></i>
                             </a>
-                            <!-- <a href="https://www.instagram.com/sinarmasfutures/" target="_blank"> -->
-                            <a href="#">
+                            <a href="https://www.instagram.com/sinarmasfutures/" target="_blank">
                                 <i class="fa-brands fa-instagram text-white text-2xl icon-top"></i>
                             </a>
                         </div>
@@ -472,14 +470,77 @@
                     </div>
                     <div>
                         <div>Simak tata cara pengaduan</div>
-                        <a class="text-red-500" href="#">Lihat di sini</a>
+                        <button id="popup-trigger" class="text-red-500">Lihat di sini</button>
                     </div>
                     <div>
                         <div>Link Pengaduan Nasabah</div>
                         <a class="text-red-500" href="https://pengaduan.bappebti.go.id"
                             target="_blank">https://pengaduan.bappebti.go.id</a>
                     </div>
+                    <div id="popup-content"
+                        class="fixed top-0 left-0 right-0 bottom-0 bg-gray-500 bg-opacity-75 flex items-center justify-center hidden">
+                        <div class="bg-white pb-8 rounded lg:max-w-screen-lg max-w-xs overflow-auto max-h-screen">
+                            <h2 class="text-center text-2xl mb-4 font-bold">Tata Cara Pengaduan</h2>
+                            <ul class="list-decimal list-none p-2">
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">1</span>
+                                    Nasabah menyampaikan keluhan/pengaduan ke Customer Support.
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">2</span>
+                                    Customer Support PT Sinarmas Futures akan mengarahkan dan membantu Nasabah melalui
+                                    email atau telepon untuk melakukan pengaduan pada website pengaduan yang dikelola
+                                    oleh Badan Pengawas Perdagangan Berjangka Komoditi (BAPPEBTI) di
+                                    <a class="text-red-500" href="https://pengaduan.bappebti.go.id"
+                                        target="_blank">https://pengaduan.bappebti.go.id</a>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">3</span>
+                                    Nasabah melakukan isian pengaduan secara online pada website pengaduan tersebut.
+                                </li>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">4</span>
+                                    Nasabah membuat pengaduan yang memuat informasi berupa data Nasabah, data Pialang
+                                    Berjangka dan/atau pihak terlapor, kronologis pengaduan, melengkapi dokumen
+                                    pendukung berupa bukti transfer dana dan surat kuasa khusus jika pengaduan dilakukan
+                                    oleh kuasa.
+                                </li>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">5</span>
+                                    Setelah pengaduan diverifikasi dan disetujui oleh BAPPEBTI, maka proses penyelesaian
+                                    pengaduan telah masuk dalam tahap penanganan pengaduan Nasabah melalui proses
+                                    musyawarah pada tingkat Pialang Berjangka dengan jangka waktu paling lama 21 hari
+                                    kerja terhitung setelah BAPPEBTI memberikan persetujuan.
+                                </li>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">6</span>
+                                    Bila tidak tercapai mufakat di tingkat Pialang Berjangka, proses akan dilanjutkan ke
+                                    tahap mediasi oleh Bursa Berjangka dengan jangka waktu paling lama 21 hari kerja.
+                                </li>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">7</span>
+                                    Bila tidak juga tercapai kesepakatan pada tahap mediasi di Bursa Berjangka, Nasabah
+                                    bisa menyelesaikan pengaduan di BAKTI (Badan Arbitrase Perdagangan Berjangka
+                                    Komoditi) atau Pengadilan Negri Jakarta Pusat sesuai dengan pemilihan di Aplikasi
+                                    Penerimaan Nasabah.
+                                </li>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="rounded-full bg-blue-500 text-white font-bold px-2 py-1 mr-2">8</span>
+                                    Seluruh laporan hasil penanganan pengaduan Nasabah akan dilaporkan kepada BAPPEBTI.
+                                </li>
+                            </ul>
+                            <div class="flex justify-center items-center">
+                                <button id="popup-close" class="bg-gray-500 text-white py-2 px-4 rounded">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="container">
@@ -489,19 +550,34 @@
                 </div>
                 <div class="flex lg:justify-between justify-center items-center pt-5">
                     <div>
-                        <a class="font-bold" href="#">FACEBOOK</a>
+                        <a class="font-bold" href="https://www.facebook.com/sinarmas.futures.5"
+                            target="_blank">FACEBOOK</a>
                     </div>
                     <div class="ml-2">
-                        <a class="font-bold" href="#">TWITTER</a>
+                        <a class="font-bold" href="https://twitter.com/sinarmasfutures" target="_blank">TWITTER</a>
                     </div>
                     <div class="ml-2">
-                        <a class="font-bold" href="#">INSTAGRAM</a>
+                        <a class="font-bold" href="https://www.instagram.com/sinarmasfutures/"
+                            target="_blank">INSTAGRAM</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="https://kit.fontawesome.com/9c487cdb57.js" crossorigin="anonymous"></script>
+    <script>
+        const trigger = document.getElementById('popup-trigger')
+        const content = document.getElementById('popup-content')
+        const close = document.getElementById('popup-close')
+
+        trigger.addEventListener('click', () => {
+            content.classList.remove('hidden')
+        })
+
+        close.addEventListener('click', () => {
+            content.classList.add('hidden')
+        })
+    </script>
 </body>
 
 </html>
